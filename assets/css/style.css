@@ -1,9 +1,67 @@
-body {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-main {
-	flex: 1 0 auto;
+body {
+  /*background-color: #F07575;  fallback color if gradients are not supported */
+  /*background-image: -webkit-linear-gradient(top, hsl(0, 80%, 70%), #bada55); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */*/
+  /*background-image:    -moz-linear-gradient(top, hsl(0, 80%, 70%), #bada55); /* For Firefox (3.6 to 15) */*/
+  /*background-image:      -o-linear-gradient(top, hsl(0, 80%, 70%), #bada55); /* For old Opera (11.1 to 12.0) */ */
+  /*background-image:         linear-gradient(to bottom, hsl(0, 80%, 70%), #bada55); /* Standard syntax; must be last */*/
+  background: #346a7a; /* Old browsers */
+  background: -moz-linear-gradient(top, #346a7a 0%, #07000a 46%, #346a7a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #346a7a 0%,#07000a 46%,#346a7a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #346a7a 0%,#07000a 46%,#346a7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#346a7a', endColorstr='#346a7a',GradientType=0 ); /* IE6-9 */
+
+	/*background-image: url('../images/abstract-blue-background-pv.jpg');*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.846;
+  color: #666666;
+
+	/*Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  /*width: 100%;*/
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: transparent;
+  color: #fff;
+}
+
+body>.navbar {
+  transition: background-color .3s ease-in;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  transition-delay: initial;;
+}
+
+.navbar {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.brandImage {
+  max-height: 50px;
+}
+
+.pan-heading {
+  background-color: #fff;
+}
+
+#social-media {
+  display: inline;
+}
+
+.social {
+  max-width: 100%;
 }

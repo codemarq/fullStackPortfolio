@@ -54,3 +54,7 @@ footer {
 .panel-default > .panel-heading {
   background-color: white;
 }
+
+.img-circle {
+  max-width: 200px;
+}

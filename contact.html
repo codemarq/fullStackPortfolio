@@ -16,6 +16,11 @@
 
   	<!-- style.css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
 </head>
 <body>
 	<div class="container">
@@ -44,19 +49,54 @@
 		<main>
 			<section class="col-md-8 col-sm-12 panel panel-default">
 				<div class="panel-heading"><h4>Message Me</h4></div>
-  				<div class="panel-body"></div>
+				<hr>
+  				<div class="panel-body">
+  					<form class="form-horizontal">
+					  <fieldset>
+					    <div class="form-group">
+					      <label for="inputName" class="col-lg-2 control-label">Name</label>
+					      <div class="col-lg-10">
+					        <input type="text" class="form-control" id="inputName" placeholder="Name">
+					      </div>
+					    </div>
+
+					     <div class="form-group">
+					      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+					      <div class="col-lg-10">
+					        <input type="text" class="form-control" id="inputEmail" placeholder="Email, e.g. jdoe@email.com">
+					      </div>
+					    </div>
+
+					    <div class="form-group">
+					      <label for="textArea" class="col-lg-2 control-label">Message</label>
+					      <div class="col-lg-10">
+					        <textarea class="form-control" rows="3" id="textArea" placeholder="write me a message..."></textarea>
+					      </div>
+					    </div>
+
+					    <div class="form-group">
+					      <div class="col-lg-10 col-lg-offset-2">
+					        <button type="reset" class="btn btn-default">Cancel</button>
+					        <button type="submit" class="btn btn-info">Submit</button>
+					      </div>
+					    </div>
+					  </fieldset>
+					</form>
+  				</div>
+
 			</section>
 			<aside class="col-md-3 col-md-offset-1 col-sm-12 panel panel-default">
 				<div class="panel-heading"><h4>Contact Me</h4></div>
+				<hr>
   				<div class="panel-body">
   					<ul id="social-media">
-  						<li class="col-md-4">
+  						<li class="col-xs-4">
   							<a href="http://www.linkedin.com/in/jmmarquardt"><img class="social" src="assets/images/1474707345_linkedin.png"></a>
   						</li>
-  						<li class="col-md-4">
+  						<li class="col-xs-4">
   							<a href="https://github.com/codemarq"><img class="social" src="assets/images/1474707366_github.png"></a>
   						</li>
-  						<li class="col-md-4">
+  						<li class="col-xs-4">
   							<a href="http://stackoverflow.com/users/6581996/john-mike-marquardt?tab=profile"><img class="social" src="assets/images/1474707371_stackoverflow.png"></a>
   						</li>
   					</ul>

@@ -7,6 +7,7 @@ I am rebuilding this site as a full-stack app.  This started as a front-end proj
 
 ![ScreenShot](/public/assets/img/screenshot_portfolio.png)
 
+
 ## Technologies Used
 * Node.js
 * Express

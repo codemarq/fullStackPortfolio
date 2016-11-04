@@ -1,0 +1,14 @@
+CREATE DATABASE portfolio_db;
+
+USE portfolio_db;
+
+CREATE TABLE projects (
+	id INT NOT NULL AUTO_INCREMENT,
+	project_name VARCHAR(255) NOT NULL,
+	description VARCHAR(255) NOT NULL,
+	gitUrl VARCHAR(255) NOT NULL,
+	herokuUrl VARCHAR(255) NOT NULL,
+	imageUrl VARCHAR(255) NOT NULL,
+	date TIMESTAMP,
+	PRIMARY KEY (id)
+);

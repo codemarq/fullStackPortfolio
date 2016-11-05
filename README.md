@@ -9,6 +9,7 @@ I am rebuilding this site as a full-stack app.  This started as a front-end proj
 
 
 ## Technologies Used
+
 * Node.js
 * Express
 * Handlebars
@@ -20,10 +21,8 @@ I am rebuilding this site as a full-stack app.  This started as a front-end proj
 Model View Controller (MVC) method
 
 ## Future Improvements
-* convert from front-end to full-stack
-* styling
-* serve up the apps on portfolio
-* email
+* serve up the apps on portfolio route using sequelize
+
 
 ## Author
-&copy; 2016 John-Mike Marquardt @codemarq
+&copy; 2016 John-Mike Marquardt https://github.com/codemarq

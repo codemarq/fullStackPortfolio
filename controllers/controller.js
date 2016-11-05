@@ -31,23 +31,9 @@ router.get('/index', function (req, res) {
 	});
 });
 
-// route to handle adding a new burger
-router.post('/index/insert', function (req, res) {
-	burger.insertOne(['project_name'], [req.body.project_name], function () {
-		res.redirect('/index');
-	});
-});
-
-// route to handle updating a burger (devouring it)
-router.put('/projects/update/:id', function (req, res) {
-	var condition = 'id = ' + req.params.id;
-
-	// console.log('condition', condition);
-
-	// burger.updateOne({devoured: true}, condition, function () {
-	// 	res.redirect('/index');
-	// });
-});
-
+router.get('/portfolio', function(req, res) {
+	var portfolio = 'https://github.com/codemarq'
+	res.redirect(portfolio);
+})
 // export router
 module.exports = router;

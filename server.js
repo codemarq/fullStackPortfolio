@@ -14,7 +14,7 @@ var bodyParser = require('body-parser');
 // Sets up the Express App
 // ==========================================================================
 var app = express();
-var PORT = 3000;
+var PORT = 3010;
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() || __dirname + '/public'));

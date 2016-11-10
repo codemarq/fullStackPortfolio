@@ -1,0 +1,21 @@
+<div class="container">
+  <header>
+    <h1>Eat the Burger!!</h1>
+  </header>
+  {{!-- left column --}}
+  <section class="row">
+    <div class="col-sm-12 col-md-4 well">
+      <h2>Eat these Burgers</h2>
+      {{#each burgers}}
+        {{#unless devoured}}    
+          <ul>
+            <li>
+              <h3>{{ this.id }} {{ this.burger_name }}</h3>
+              <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class="btn btn-danger" id="devoured">Devour it!</button>
+              </form>
+            </li>
+          </ul>
+        {{/unless}}    
+      {{/each}}
+    </div>

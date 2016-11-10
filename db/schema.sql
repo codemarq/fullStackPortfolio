@@ -2,9 +2,9 @@ CREATE DATABASE portfolio_db;
 
 USE portfolio_db;
 
-CREATE TABLE projects (
+CREATE TABLE project (
 	id INT NOT NULL AUTO_INCREMENT,
-	project_name VARCHAR(255) NOT NULL,
+	name VARCHAR(255) NOT NULL,
 	description VARCHAR(255) NOT NULL,
 	gitUrl VARCHAR(255) NOT NULL,
 	herokuUrl VARCHAR(255) NOT NULL,

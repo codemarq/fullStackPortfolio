@@ -8,32 +8,34 @@ var express = require('express');
 var router = express.Router();
 
 // require the burger.js file
-var burger = require('../models/portfolio.js');
+var Project = require('../models/project.js');
 
 // ==================================================================================
 // ROUTES
 // ==================================================================================
 
 router.get('/', function (req, res) {
-	res.redirect('/index');
+	res.render('/index');
 });
 
-// route to handle select all
-router.get('/index', function (req, res) {
-	burger.selectAll(function (data) {
-
-		var hbsObject = { 
-			burgers: data
-		};
-
-		// console.log(hbsObject);
-		res.render('index', hbsObject);
-	});
-});
+// // route to handle select all
+// router.get('/index', function (req, res) {
+	
+// });
 
 router.get('/portfolio', function(req, res) {
 	var portfolio = 'https://github.com/codemarq'
-	res.redirect(portfolio);
+	res.render('portfolio');
+
+	Project.findAll({}).then(function (data) {
+
+		// var hbsObject = { 
+		// 	burgers: data
+		// };
+
+		// console.log(hbsObject);
+		res.render('portfolio', {project: data});
+	});
 })
 // export router
 module.exports = router;

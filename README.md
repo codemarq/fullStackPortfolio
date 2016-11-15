@@ -1,3 +1,5 @@
+[![NSP Status](https://nodesecurity.io/orgs/codemarq/projects/b9ce07ae-6f03-4e4d-919e-931a5d79005e/badge)](https://nodesecurity.io/orgs/codemarq/projects/b9ce07ae-6f03-4e4d-919e-931a5d79005e)
+
 # Full Stack Portfolio
 Online Full-stack Developer resume and portfolio
 

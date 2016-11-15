@@ -1,23 +1,28 @@
 'use strict';
 
+// User model (to create our bulk insert for local db)
+var Project = require('../models')["Project"];
+
 module.exports = {
   up: function (queryInterface, Sequelize) {
-    return project.bulkCreate([
+    return Project.bulkCreate([
       // Brief Opinions
       {
         name: "Brief Opinions",
         description: "Brief Opinions is an app that searches court cases and returns a summarized opinion via the courtlistener API and the Intellexer Summarizer API.",
         gitUrl: "https://github.com/codemarq/briefOpinions",
         herokuUrl: "https://polar-beach-64295.herokuapp.com/",
-        imageUrl: "./public/assets/img/briefOpinions.png"
+        imageUrl: "./public/assets/img/briefOpinions.png",
+        altText: "image of app"
       },
       // Sequelize Burger
       {
         name: "Sequelize Burgers",
-        description: 'Eat the Burger is a full-stack web app. This is a burger eating game using node, express, mysql, handlebars, sequelize, html and css. I originally built this app using traditional MySQL schema and seeds. This version of the app had been rebuilt using the node package "Sequelize" to seed the database, and build models and their associated methods.',
+        description: 'Eat the Burger is a full-stack web app. This is a burger eating game using node, express, mysql, handlebars, sequelize, html and css. I originally built this app using traditional MySQL schema and seeds.',
         gitUrl: "https://github.com/codemarq/sequelizedBurger",
         herokuUrl: "https://marquardt-sequelizedburger.herokuapp.com/",
-        imageUrl: "./public/assets/img/sequelizeBurger.png"
+        imageUrl: "./public/assets/img/sequelizeBurger.png",
+        altText: "image of app"
       },
       // RPS
       {
@@ -25,31 +30,62 @@ module.exports = {
         description: "Rock, Paper, Scissors, Lizard, Spock is a multiplayer online game written in Javascript utilizing Firebase for player interaction and chat.",
         gitUrl: "https://github.com/codemarq/RPS-Multiplayer",
         herokuUrl: "",
-        imageUrl: ""
+        imageUrl: "./public/assets/img/RPS.png",
+        altText: "image of app"
+      },
+      // Python Asteroids
+      {
+        name: "Python Asteroids",
+        description: 'Remake of the Classic arcade game "Asteroids" built in Python.',
+        gitUrl: "https://github.com/codemarq/PythonAsteroids",
+        herokuUrl: "",
+        imageUrl: "./public/assets/img/asteroids.png",
+        altText: "image of app"
+      },
+      // Python Pong
+      {
+        name: "Python Pong",
+        description: 'Remake of the Classic arcade game "Pong" built in Python.',
+        gitUrl: "https://github.com/codemarq/PythonPong",
+        herokuUrl: "",
+        imageUrl: "./public/assets/img/pong.png",
+        altText: "image of app"
+      },
+      // Giphy API
+      {
+        name: "Giphy API",
+        description: "App working with json data, querying API's on the giphyapi site using ajax. Dynamically creating html elements, (buttons, imgs, etc). Also, this site employs both start and stop animate functions on clicking the generated gif's.",
+        gitUrl: "https://github.com/codemarq/giphyAPI",
+        herokuUrl: "",
+        imageUrl: "./public/assets/img/giphy.png",
+        altText: "image of app"
       },
       // Archer Hangman
       {
         name: "Archer Hangman",
-        description: 'https://github.com/codemarq/week-3-game"Archer" tv show themed Hangman game, using HTML and JavaScript.',
+        description: '"Archer" tv show themed Hangman game, using HTML and JavaScript.',
         gitUrl: "https://github.com/codemarq/week-3-game",
         herokuUrl: "",
-        imageUrl: ""
+        imageUrl: "./public/assets/img/archer.png",
+        altText: "image of app"
       },
       // Liri
       {
         name: "Liri Node CLI",
-        description: "Liri is a Language Interpretation and Recognition Interface. Liri is a command line node app that takes in parameters and gives you back data.https://github.com/codemarq/liri-node-app",
+        description: "Liri is a Language Interpretation and Recognition Interface. Liri is a command line node app that takes in parameters and gives you back data.",
         gitUrl: "https://github.com/codemarq/liri-node-app",
         herokuUrl: "",
-        imageUrl: ""
+        imageUrl: "./public/assets/img/bamazon.png",
+        altText: "image of app"
       },
       // Bamazon
       {
         name: "Bamazon Node CLI",
-        description: "",
-        gitUrl: "",
+        description: "Bamazon is a Node JS app which mimics an Amazon type of store. This app is written in Node.JS and uses a local MySQL database.",
+        gitUrl: "https://github.com/codemarq/bamazon",
         herokuUrl: "",
-        imageUrl: ""
+        imageUrl: "./public/assets/img/bamazon.png",
+        altText: "image of app"
       },
       // Super-Friend Finder
       {
@@ -57,15 +93,17 @@ module.exports = {
         description: 'FullStack "Friend Finder" app using express, node.js, HTML, CSS.',
         gitUrl: "https://github.com/codemarq/friendFinder",
         herokuUrl: "",
-        imageUrl: ""
+        imageUrl: "./public/assets/img/friendFinder.png",
+        altText: "image of app"
       },
       // Star Wars
       {
         name: "Star Wars Card Battle Game",
-        description: "This is the week 4 game assignment for UNC Coding Bootcamp-Star Wars card battle game. The purpose of this exercise was to create a simple game, with sounds and images, where you battle a computer based opponent. If you choose your enemies in the correct order, you win, as you get stronger and stronger. If you don't choose wisely, you die!",
+        description: "This is a Star Wars card battle game. The purpose of this exercise was to create a simple game, with sounds and images, where you battle a computer based opponent.",
         gitUrl: "https://github.com/codemarq/week-4-game",
         herokuUrl: "",
-        imageUrl: ""
+        imageUrl: "./public/assets/img/starwars.png",
+        altText: "image of app"
       },
       // Trivia Game
       {
@@ -73,21 +111,14 @@ module.exports = {
         description: "A simple trivia game using HTML, CSS, JavaScript and jQuery. This was an exercise in dynamically generating HTML elements using JavaScript and jQuery. This was also an exercise in using timers and counters in JavaScript.",
         gitUrl: "https://github.com/codemarq/triviaGame",
         herokuUrl: "",
-        imageUrl: ""
-      },
-      // Giphy API
-      {
-        name: "Giphy API",
-        description: "Practice working with json data, querying API's on the giphyapi site using ajax. Dynamically create html elements, (buttons, imgs, etc). Also, this site employs both start and stop animate functions on clicking the generated gif's. User can also add a new button based on text entered in the 'Add a topic' section, and ping the giphy api with that button.",
-        gitUrl: "https://github.com/codemarq/giphyAPI",
-        herokuUrl: "",
-        imageUrl: ""
-      }
+        imageUrl: "./public/assets/img/trivia.png",
+        altText: "image of app"
+      }     
     ])
   },
 
   down: function (queryInterface, Sequelize) {
-    return project.destroy({where: {name: [
+    return Project.destroy({where: {name: [
       "Brief Opinions",
       "Sequelize Burgers",
       "Rock, Paper Scissors Multiplayer Online",
@@ -97,7 +128,9 @@ module.exports = {
       "Super-Friend Finder App",
       "Star Wars Card Battle Game",
       "Trivia Game",
-      "Giphy API"
+      "Giphy API",
+      "Python Asteroids",
+      "Python Pong"
     ]}})
   }
 };

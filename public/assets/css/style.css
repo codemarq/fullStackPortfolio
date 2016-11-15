@@ -52,11 +52,6 @@ header {
   color: white;
 }
 
-figure img{
-  max-height: 250px;
-  max-width: 250px;
-}
-
 footer a {
   color: white;
 }
@@ -72,4 +67,16 @@ a {
 
 h2 {
   color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.card {
+  background-color: #64686d;
+}
+
+.card-reveal p {
+  color: black;
 }

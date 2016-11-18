@@ -1,8 +1,3 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
   background-image: url(../img/rothko_blueandgrey1962_l.jpg);
   background-position: center;
@@ -12,17 +7,17 @@ body {
   font-size: 18px;
   line-height: 1.846;
   color: #666666;
-
-	/*Margin bottom by footer height */
-	margin-bottom: 60px;
+  /*materialize sticky footer css*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  /*width: 100%;*/
-  /* Set the fixed height of the footer here */
-  height: 60px;
+main {
+  flex: 1 0 auto;
+}
+
+footer.page-footer {
   background-color: transparent;
   color: #fff;
 }
@@ -33,19 +28,6 @@ nav {
 
 .card-panel {
   background-color: transparent;
-}
-/*header {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
-/*
-.panel {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: transparent;
-  color: white;
-}*/
-
-footer a {
-  color: white;
 }
 
 p {

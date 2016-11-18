@@ -26,7 +26,7 @@ module.exports = {
       },
       // RPS
       {
-        name: "Rock, Paper Scissors Multiplayer Online",
+        name: "Rock, Paper, Scissors-Multiplayer",
         description: "Rock, Paper, Scissors, Lizard, Spock is a multiplayer online game written in Javascript utilizing Firebase for player interaction and chat.",
         gitUrl: "https://github.com/codemarq/RPS-Multiplayer",
         herokuUrl: "https://jmmarquardt-rpsls.herokuapp.com/",

@@ -2,13 +2,17 @@
 <div class="row">
   {{#each project}}
   <div class="col s12 m6">
-    <div class="card">
+    <div class="card medium grey z-depth-4">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="{{this.imageUrl}}">
+        <img class="responsive-img activator" src="{{this.imageUrl}}" alt="{{this.altText}}">
       </div>
       <div class="card-content">
         <span class="card-title activator white-text text-darken-4">{{ this.name }}<i class="material-icons right">more_vert</i></span>
-        <p style="color:white;"><a href="{{this.gitUrl}}">Github</a>  |  <a href="{{this.herokuUrl}}">Heroku</a></p>
+        <p style="color:white;"><a href="{{this.gitUrl}}">Github</a>
+        {{#if this.herokuUrl}}
+          |  <a href="{{this.herokuUrl}}">Launch App on Heroku</a> 
+        {{/if}}
+        </p>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">{{ this.name }}<i class="material-icons right">close</i></span>

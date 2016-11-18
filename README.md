@@ -27,4 +27,4 @@ Model View Controller (MVC) method
 
 
 ## Author
-&copy; 2016 John-Mike Marquardt https://github.com/codemarq
+&copy; 2016 John-Mike Marquardt [Github](https://github.com/codemarq) | [jmmarquardt.com](https://jmmarquardt.com) | [LinkedIn](https://www.linkedin.com/in/jmmarquardt)

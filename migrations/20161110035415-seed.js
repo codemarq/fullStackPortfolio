@@ -11,7 +11,7 @@ module.exports = {
         name: "Brief Opinions",
         description: "Brief Opinions is an app that searches court cases and returns a summarized opinion via the courtlistener API and the Intellexer Summarizer API.",
         gitUrl: "https://github.com/codemarq/briefOpinions",
-        herokuUrl: "https://polar-beach-64295.herokuapp.com/",
+        herokuUrl: "https://briefopinions.herokuapp.com/",
         imageUrl: "./public/assets/img/briefOpinions.png",
         altText: "image of app"
       },
@@ -29,7 +29,7 @@ module.exports = {
         name: "Rock, Paper Scissors Multiplayer Online",
         description: "Rock, Paper, Scissors, Lizard, Spock is a multiplayer online game written in Javascript utilizing Firebase for player interaction and chat.",
         gitUrl: "https://github.com/codemarq/RPS-Multiplayer",
-        herokuUrl: "",
+        herokuUrl: "https://jmmarquardt-rpsls.herokuapp.com/",
         imageUrl: "./public/assets/img/RPS.png",
         altText: "image of app"
       },
@@ -56,7 +56,7 @@ module.exports = {
         name: "Giphy API",
         description: "App working with json data, querying API's on the giphyapi site using ajax. Dynamically creating html elements, (buttons, imgs, etc). Also, this site employs both start and stop animate functions on clicking the generated gif's.",
         gitUrl: "https://github.com/codemarq/giphyAPI",
-        herokuUrl: "",
+        herokuUrl: "https://jmmarquardt-giphy.herokuapp.com/",
         imageUrl: "./public/assets/img/giphy.png",
         altText: "image of app"
       },

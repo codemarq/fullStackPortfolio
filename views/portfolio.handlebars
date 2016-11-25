@@ -1,7 +1,7 @@
 <main>
 <div class="row">
   {{#each project}}
-  <div class="col s12 m6">
+  <div class="col s12 m4">
     <div class="card medium grey z-depth-4">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="responsive-img activator" src="{{this.imageUrl}}" alt="{{this.altText}}">
@@ -10,7 +10,7 @@
         <span class="card-title activator white-text text-darken-4">{{ this.name }}<i class="material-icons right">more_vert</i></span>
         <p style="color:white;"><a href="{{this.gitUrl}}">Github</a>
         {{#if this.herokuUrl}}
-          |  <a href="{{this.herokuUrl}}">Launch App on Heroku</a> 
+          |  <a href="{{this.herokuUrl}}">Launch App on Heroku</a>
         {{/if}}
         </p>
       </div>
@@ -20,6 +20,6 @@
       </div>
     </div>
   </div>
-  {{/each}}    
-  </div> 
+  {{/each}}
+  </div>
 </main>

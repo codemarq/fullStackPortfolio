@@ -1,8 +1,10 @@
 body {
-  background-image: url(../img/rothko_blueandgrey1962_l.jpg);
-  background-position: center;
+  /*background-image: url(../img/rothko_blueandgrey1962_l.jpg);*/
+  /*background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  /*background-color: #000066;*/
+  background-color: #010132;
   font-family: 'Signika', sans-serif, "Helvetica Neue", Helvetica, Arial;
   font-size: 18px;
   line-height: 1.846;
@@ -18,16 +20,22 @@ main {
 }
 
 footer.page-footer {
-  background-color: transparent;
+  /*background-color: transparent;*/
+  /*background-color: #000066;*/
+  background-color: #010132;
   color: #fff;
 }
 
 nav {
-  background-color: transparent;
+  /*background-color: transparent;*/
+  /*background-color: #000066;*/
+  background-color: #010132;
 }
 
 .card-panel {
-  background-color: transparent;
+  /*background-color: transparent;*/
+  /*background-color: #000066;*/
+  background-color: #010132;
 }
 
 p {

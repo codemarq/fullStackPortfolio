@@ -6,6 +6,24 @@ var Project = require('../models')["Project"];
 module.exports = {
   up: function (queryInterface, Sequelize) {
     return Project.bulkCreate([
+      // Twilight Burger
+      {
+        name: "Twilight Burger",
+        description: "The Legend of Ronald: Twilight Burger is a two-player 2D HTML5 arcade game built with JavaScript, Node, Express, React, MongoDB, D3, CraftyJS and Stormpath.",
+        gitUrl: "https://github.com/codemarq/burgerFight",
+        herokuUrl: "https://twilightburger.herokuapp.com/",
+        imageUrl: "./public/assets/img/twilightBurger.gif",
+        altText: "image of Twilight Burger app"
+      },
+      // Excelsior Project
+      {
+        name: "Excelsior Project",
+        description: "A visualization of pollution data across the US for the last five years. Built with HTML, CSS, Materialize, JS, jQuery, Node, Express, Handlebars, Sequelize, D3, Karma, MySQL, Stormpath, Browserify, Mocha, Chai, & Nightmare.",
+        gitUrl: "https://github.com/mr-attack/ExcelsiorProject",
+        herokuUrl: "https://excelsiorproject.herokuapp.com",
+        imageUrl: "./public/assets/img/excelsior.png",
+        altText: "image of Excelsior App"
+      },
       // Brief Opinions
       {
         name: "Brief Opinions",
@@ -26,8 +44,8 @@ module.exports = {
       },
       // RPS
       {
-        name: "Rock, Paper, Scissors-Multiplayer",
-        description: "Rock, Paper, Scissors, Lizard, Spock is a multiplayer online game written in Javascript utilizing Firebase for player interaction and chat.",
+        name: "Rock, Paper, Scissors",
+        description: 'Rock, Paper, Scissors, Lizard, Spock-A multiplayer online game written in Javascript utilizing Firebase for player interaction and chat.',
         gitUrl: "https://github.com/codemarq/RPS-Multiplayer",
         herokuUrl: "https://jmmarquardt-rpsls.herokuapp.com/",
         imageUrl: "./public/assets/img/RPS.png",
@@ -69,6 +87,7 @@ module.exports = {
         imageUrl: "./public/assets/img/archer.png",
         altText: "image of app"
       },
+
       // Liri
       {
         name: "Liri Node CLI",
@@ -86,42 +105,18 @@ module.exports = {
         herokuUrl: "",
         imageUrl: "./public/assets/img/bamazon.png",
         altText: "image of app"
-      },
-      // Super-Friend Finder
-      {
-        name: "Super-Friend Finder App",
-        description: 'FullStack "Friend Finder" app using express, node.js, HTML, CSS.',
-        gitUrl: "https://github.com/codemarq/friendFinder",
-        herokuUrl: "",
-        imageUrl: "./public/assets/img/friendFinder.png",
-        altText: "image of app"
-      },
-      // Star Wars
-      {
-        name: "Star Wars Card Battle Game",
-        description: "This is a Star Wars card battle game. The purpose of this exercise was to create a simple game, with sounds and images, where you battle a computer based opponent.",
-        gitUrl: "https://github.com/codemarq/week-4-game",
-        herokuUrl: "",
-        imageUrl: "./public/assets/img/starwars.png",
-        altText: "image of app"
-      },
-      // Trivia Game
-      {
-        name: "Trivia Game",
-        description: "A simple trivia game using HTML, CSS, JavaScript and jQuery. This was an exercise in dynamically generating HTML elements using JavaScript and jQuery. This was also an exercise in using timers and counters in JavaScript.",
-        gitUrl: "https://github.com/codemarq/triviaGame",
-        herokuUrl: "",
-        imageUrl: "./public/assets/img/trivia.png",
-        altText: "image of app"
-      }     
+      }
     ])
   },
 
   down: function (queryInterface, Sequelize) {
     return Project.destroy({where: {name: [
+      "Twilight Burger",
+      "Excelsior Project",
       "Brief Opinions",
       "Sequelize Burgers",
-      "Rock, Paper Scissors Multiplayer Online",
+      "Rock, Paper, Scissors",
+      "Rock, Paper, Scissors-Multiplayer",
       "Archer Hangman",
       "Liri Node CLI",
       "Bamazon Node CLI",

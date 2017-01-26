@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "portfolio",
+    "database": "portfolio_db",
     "host": "localhost",
     "dialect": "mysql"
   },

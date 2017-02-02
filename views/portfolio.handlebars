@@ -2,17 +2,27 @@
 <div class="row">
   {{#each project}}
   <div class="col s12 m4">
-    <div class="card">
+    <div class="card sticky-action z-depth-2">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="responsive-img activator" src="{{this.imageUrl}}" alt="{{this.altText}}">
       </div>
       <div class="card-content">
-        <span class="card-title activator black-text text-darken-4">{{ this.name }}<i class="material-icons right">info</i></span>
-        <p style="color:white;"><a href="{{this.gitUrl}}">Github</a>
+        <span class="card-title activator black-text text-darken-4">
+          <h5>
+            {{ this.name }}<i class="material-icons right">info</i>
+          </h5>
+        </span>
+      </div>
+      <div class="card-action">
+        <a href="{{this.gitUrl}}" class="left">
+          <img src="/public/assets/img/icons/github-32-black.png" alt="Github link" class ="waves-effect btn-flat"/>
+        </a>
+
         {{#if this.herokuUrl}}
-          |  <a href="{{this.herokuUrl}}">Launch App on Heroku</a>
+          <a href="{{this.herokuUrl}}" class="right">
+            <img src="/public/assets/img/icons/heroku-32-color.png" alt="Heroku link" class ="waves-effect btn-flat"/>
+          </a>
         {{/if}}
-        </p>
       </div>
       <div class="card-reveal">
         <span class="card-title">{{ this.name }}<i class="material-icons right">close</i></span>

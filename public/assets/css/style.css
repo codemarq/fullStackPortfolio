@@ -1,5 +1,5 @@
 body {
-  font-family: 'Signika', sans-serif, "Helvetica Neue", Helvetica, Arial;
+  font-family: sans-serif, "Helvetica Neue", Helvetica, Arial;
   font-size: 14px;
   line-height: 1.2;
   /*materialize sticky footer css*/
@@ -22,20 +22,20 @@ footer.page-footer {
 nav {
   background-color: transparent;
   color: black;
+  margin-bottom: 1%;
 }
 
 .card-panel {
   background-color: transparent;
 }
 
-p {
-  font-size: 18px;
-}
-
 a {
   color: black;
 }
 
+h1 {
+  font-size: 2.2rem;
+}
 nav ul a {
     color: black;
 }
@@ -45,18 +45,26 @@ nav .brand-logo {
     padding-left: 1%;
 }
 
-h2 {
-
-}
-
-h3 {
-
-}
-
 .card {
   background-color: white;
+  max-height: 380px;
 }
 
 .card-reveal p {
   color: black;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  margin-right: 0;
+}
+
+.card-image {
+  /*margin-bottom: 2.5%;*/
+}
+.card-content {
+  max-height: 75px;
+}
+
+.card-action {
+  min-height: 76px;
 }

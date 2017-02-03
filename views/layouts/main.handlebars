@@ -9,8 +9,6 @@
 		John-Mike Marquardt is a a full-stack web developer, engineer and scientist. He has worked in scientific instrumentation, chemical analysis and software support for the last 18 years and has just completed UNC-Chapel Hill’s Coding Boot Camp for Full Stack Web Developers." />
 		<!-- reset.css -->
 		<link rel="stylesheet" type="text/css" href="./public/assets/css/reset.css">
-		{{!-- google Francois One font --}}
-		{{!-- <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet"> --}}
 		{{!-- Google icons --}}
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- Compiled and minified Materialize CSS -->
@@ -54,10 +52,14 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	{{!-- materialize active cards --}}
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-		{{!-- side nav script --}}
+		{{!-- my page script --}}
 		<script>
 			$(document).ready(function () {
+				// side nav on mobile collapse
 				$(".button-collapse").sideNav();
+				// contact form text area
+ 				$('#textarea1').trigger('autoresize');
+				$('#textarea1').characterCounter();
 			});
 		</script>
 		{{!-- google analytics --}}

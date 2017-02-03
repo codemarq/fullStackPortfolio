@@ -14,10 +14,12 @@ var Project = require('../models')["Project"];
 // ROUTES
 // ============================================================================
 
+// Index Route
 router.get('/', function (req, res) {
 	res.render('index');
 });
 
+// Portfolio Route
 router.get('/portfolio', function(req, res) {
 	// var portfolio = 'https://github.com/codemarq'
 	// res.render('portfolio');
@@ -31,6 +33,17 @@ router.get('/portfolio', function(req, res) {
 		// console.log(portfolioObject);
 		res.render('portfolio', {project: data});
 	});
-})
+});
+
+// Contact page route
+router.get('/contact', function(req, res) {
+	res.render('contact');
+});
+
+// Contact-Send Message route
+router.post('/send', function (req, res) {
+
+});
+
 // export router
 module.exports = router;

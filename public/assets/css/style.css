@@ -20,8 +20,6 @@ footer.page-footer {
 }
 
 nav {
-  background-color: transparent;
-  color: black;
   margin-bottom: 1%;
 }
 
@@ -58,13 +56,15 @@ nav .brand-logo {
   margin-right: 0;
 }
 
-.card-image {
-  /*margin-bottom: 2.5%;*/
-}
+/*
 .card-content {
   max-height: 75px;
 }
 
 .card-action {
   min-height: 76px;
+}*/
+
+.btn-flat:hover {
+  background-color: grey lighten-3;
 }

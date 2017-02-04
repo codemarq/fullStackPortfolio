@@ -35,17 +35,12 @@ h1 {
   font-size: 2.2rem;
 }
 nav ul a {
-    color: black;
+    /*color: black;*/
 }
 
 nav .brand-logo {
-    color: black;
+    /*color: black;*/
     padding-left: 1%;
-}
-
-.card {
-  background-color: white;
-  max-height: 380px;
 }
 
 .card-reveal p {
@@ -55,15 +50,6 @@ nav .brand-logo {
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
   margin-right: 0;
 }
-
-/*
-.card-content {
-  max-height: 75px;
-}
-
-.card-action {
-  min-height: 76px;
-}*/
 
 .btn-flat:hover {
   background-color: grey lighten-3;
